@@ -1,0 +1,147 @@
+//
+//  MyStore.m
+//  WizardView
+//
+//  Created by Junqiang You on 6/30/09.
+//  Copyright 2009 __MyCompanyName__. All rights reserved.
+//
+
+#import "MyStore.h"
+#import "WizardViewAppDelegate.h"
+#import "GlobalConfiguration.h"
+#import <StoreKit/SKProductsRequest.h>
+#import <StoreKit/SKPaymentTransaction.h>
+#import <StoreKit/SKPayment.h>
+#import <StoreKit/SKRequest.h>
+#import <StoreKit/SKError.h>
+#import "GlobalHeader.h"
+@implementation MyStore
+//store stuff
+
+-(void)initializeStoreDelegate{
+	WizardViewAppDelegate* delegate = (WizardViewAppDelegate*)[UIApplication sharedApplication].delegate;
+	if([delegate.configuration isOS3OrLater]){
+		[self registerTransactionObserver];
+	}
+}
+/*
+-(void)userRequestOptionalFeature{
+	WizardViewAppDelegate* delegate = (WizardViewAppDelegate*)[UIApplication sharedApplication].delegate;
+	if([delegate.configuration isOS3OrLater]){
+		//with purchase option
+		NSString *msg = [[NSString alloc] initWithFormat:@"%@",NSLocalizedString(@"This version has limited access to Wordoo host. To download free puzzles, please purchase to unlock the access",@"This version has limited access to Wordoo host. To download free puzzles, please purchase to unlock the access")];
+		UIActionSheet *styleAlert =
+		[[UIActionSheet alloc] initWithTitle:msg
+									delegate:self cancelButtonTitle:@"Cancel" destructiveButtonTitle:nil
+						   otherButtonTitles:NSLocalizedString(@"Unlock Wordoo for $2.99",@"Unlock Wordoo for $2.99"), nil, nil];
+		styleAlert.tag=PURCHASE_UNLOCK;
+		// use the same style as the nav bar
+		styleAlert.actionSheetStyle = self.navigationController.navigationBar.barStyle;
+		
+		[styleAlert showInView:self.view];
+		[styleAlert release];
+		[msg release];
+	}else{
+		//plain warning
+		NSString *msg = [[NSString alloc] initWithFormat:@"%@",NSLocalizedString(@"This version has limited access to Wordoo host. To download free puzzles, please purchase the Wordoo(Unlock) version",@"This version has limited access to Wordoo host. To download free puzzles, please purchase the Wordoo(Unlock) version")];
+		UIActionSheet *styleAlert =
+		[[UIActionSheet alloc] initWithTitle:msg
+									delegate:self cancelButtonTitle:@"Cancel" destructiveButtonTitle:nil
+						   otherButtonTitles:nil, nil, nil];
+		//styleAlert.tag=PURCHASE_UNLOCK;
+		// use the same style as the nav bar
+		styleAlert.actionSheetStyle = self.navigationController.navigationBar.barStyle;
+		
+		[styleAlert showInView:self.view];
+		[styleAlert release];
+		[msg release];
+	}
+}
+ */
+- (void) requestProductData
+{
+	SKProductsRequest *request= [[SKProductsRequest alloc] initWithProductIdentifiers: [NSSet setWithObject: kMyFeatureIdentifier]];
+	request.delegate = self;
+	[request start];
+}
+
+- (void)productsRequest:(SKProductsRequest *)request didReceiveResponse:(SKProductsResponse *)response
+{
+    NSArray *myProduct = response.products;
+    // populate UI
+}
+
+-(void)registerTransactionObserver{
+	//MyStoreObserver *observer = [[MyStoreObserver alloc] init];
+	[[SKPaymentQueue defaultQueue] addTransactionObserver:self];
+}
+
+- (void)paymentQueue:(SKPaymentQueue *)queue updatedTransactions:(NSArray *)transactions
+{
+	DebugLog(@"update transaction");
+    for (SKPaymentTransaction *transaction in transactions)
+    {
+        switch (transaction.transactionState)
+        {
+            case SKPaymentTransactionStatePurchased:
+                [self completeTransaction:transaction];
+                break;
+            case SKPaymentTransactionStateFailed:
+                [self failedTransaction:transaction];
+                break;
+            case SKPaymentTransactionStateRestored:
+                [self restoreTransaction:transaction];
+            default:
+                break;
+        }
+    }
+}
+
+- (void)recordTransaction: (SKPaymentTransaction *)transaction{
+	DebugLog(@"record");
+}
+- (void)provideContent:(NSString*)productIdentifier{
+	DebugLog(@"provided");
+	WizardViewAppDelegate* delegate = (WizardViewAppDelegate*)[UIApplication sharedApplication].delegate;
+	delegate.configuration.releaseTypeOfApp=STANDARD_APP;
+	NSString *msg = [[NSString alloc] initWithFormat:@"%@", NSLocalizedString(@"Thanks for purchase, now you have full access to Wordoo host",@"Thanks for purchase, now you have full access to Wordoo host")]; 
+	UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:nil
+														message:msg
+													   delegate:self
+											  cancelButtonTitle:NSLocalizedString(@"Close",@"Close")
+											  otherButtonTitles:nil,nil];
+	alertView.opaque=YES;
+	[alertView show];
+	[alertView release];
+	[msg release];
+}
+- (void) restoreTransaction: (SKPaymentTransaction *)transaction
+{
+	DebugLog(@"failed");
+    [self recordTransaction: transaction];
+    [self provideContent: transaction.originalTransaction.payment.productIdentifier];
+    [[SKPaymentQueue defaultQueue] finishTransaction: transaction];
+}
+- (void) completeTransaction: (SKPaymentTransaction *)transaction
+{
+	DebugLog(@"complete");
+    [self recordTransaction: transaction];
+    [self provideContent: transaction.payment.productIdentifier];
+    [[SKPaymentQueue defaultQueue] finishTransaction: transaction];
+}
+- (void) failedTransaction: (SKPaymentTransaction *)transaction
+{
+	DebugLog(@"failed");
+    if (transaction.error.code != SKErrorPaymentCancelled)
+    {
+        // Optionally, display an error here.
+    }
+    [[SKPaymentQueue defaultQueue] finishTransaction: transaction];
+}
+
+-(void)startPurchase:(NSString*)productIdentifier{
+	DebugLog(@"start %@",productIdentifier);
+	SKPayment *payment = [SKPayment paymentWithProductIdentifier:productIdentifier];
+	[[SKPaymentQueue defaultQueue] addPayment:payment];
+}
+@end

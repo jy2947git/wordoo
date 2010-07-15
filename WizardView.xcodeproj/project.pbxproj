@@ -1,0 +1,733 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D3623260D0F684500981E51 /* WizardViewAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* WizardViewAppDelegate.m */; };
+		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
+		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
+		AC1744710FDEFFED003A160D /* five-star.png in Resources */ = {isa = PBXBuildFile; fileRef = AC1744700FDEFFED003A160D /* five-star.png */; };
+		AC20AF670FBBD46200DB8161 /* NO-SCORE.png in Resources */ = {isa = PBXBuildFile; fileRef = AC20AF660FBBD46200DB8161 /* NO-SCORE.png */; };
+		AC3E44FA0F75F14D0093C3AA /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC3E44F90F75F14C0093C3AA /* AudioToolbox.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		AC3F8C6D0FFA827A001AC838 /* icon-big-wd-free.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AC3F8C690FFA827A001AC838 /* icon-big-wd-free.jpg */; };
+		AC3F8C6E0FFA827A001AC838 /* icon-small-wd-free.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AC3F8C6A0FFA827A001AC838 /* icon-small-wd-free.jpg */; };
+		AC3F8C6F0FFA827A001AC838 /* icon-big-wd.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AC3F8C6B0FFA827A001AC838 /* icon-big-wd.jpg */; };
+		AC3F8C720FFA82BD001AC838 /* icon-small-wd.png in Resources */ = {isa = PBXBuildFile; fileRef = AC3F8C710FFA82BD001AC838 /* icon-small-wd.png */; };
+		AC3F8C740FFA82D8001AC838 /* icon-small-wd-free.png in Resources */ = {isa = PBXBuildFile; fileRef = AC3F8C730FFA82D8001AC838 /* icon-small-wd-free.png */; };
+		AC3F8C760FFA83D7001AC838 /* icon-small-wd.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AC3F8C750FFA83D7001AC838 /* icon-small-wd.jpg */; };
+		AC3F8CBD0FFA88D0001AC838 /* Chicago.pz in Resources */ = {isa = PBXBuildFile; fileRef = AC3F8CBC0FFA88D0001AC838 /* Chicago.pz */; };
+		AC3F8EA10FFA944E001AC838 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = AC3F8EA00FFA944E001AC838 /* Default.png */; };
+		AC68E2CC0F648F6900BE8533 /* Puzzle.m in Sources */ = {isa = PBXBuildFile; fileRef = AC68E2CB0F648F6900BE8533 /* Puzzle.m */; };
+		AC69ACAA0F89814B0037ABDD /* button-next-3.png in Resources */ = {isa = PBXBuildFile; fileRef = AC69ACA80F89814B0037ABDD /* button-next-3.png */; };
+		AC69ACAB0F89814B0037ABDD /* button-before-3.png in Resources */ = {isa = PBXBuildFile; fileRef = AC69ACA90F89814B0037ABDD /* button-before-3.png */; };
+		AC6BF06D0F7146EA0025A38B /* GlobalConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = AC6BF06C0F7146EA0025A38B /* GlobalConfiguration.m */; };
+		AC6BF10D0F71502C0025A38B /* WordWizardPuzzleHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = AC6BF10C0F71502C0025A38B /* WordWizardPuzzleHelper.m */; };
+		AC6BF1C30F715E6A0025A38B /* MainMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC6BF1C20F715E6A0025A38B /* MainMenuViewController.m */; };
+		AC6BF21E0F7172890025A38B /* WordWizardPuzzleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC6BF21D0F7172890025A38B /* WordWizardPuzzleViewController.m */; };
+		AC6C8BBA0F69826D008FB33F /* DesignWizardCustomPuzzleListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC6C8BB90F69826D008FB33F /* DesignWizardCustomPuzzleListViewController.m */; };
+		AC6CF0F70F7433510027E57A /* DesignWizardHintViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC6CF0F60F7433510027E57A /* DesignWizardHintViewController.m */; };
+		AC6D7BDD0F855B7800AFBC87 /* button-2.png in Resources */ = {isa = PBXBuildFile; fileRef = AC6D7BDC0F855B7800AFBC87 /* button-2.png */; };
+		AC7134D20FA8964F008F2630 /* question.png in Resources */ = {isa = PBXBuildFile; fileRef = AC7134D10FA8964F008F2630 /* question.png */; };
+		AC7134DA0FA896A9008F2630 /* DesignWizardViewPuzzle.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC7CF5FA0F7940DB005C1A5D /* DesignWizardViewPuzzle.xib */; };
+		AC714FE50F937C1A00FDC451 /* ScoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC714FE40F937C1A00FDC451 /* ScoreViewController.m */; };
+		AC7150150F93CBBE00FDC451 /* ScoreTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AC7150140F93CBBE00FDC451 /* ScoreTableViewCell.m */; };
+		AC72AC3D0FC34E3F00DA8E6B /* DesignWizardPage1.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC7AFB5C0F59FD9E007A9C23 /* DesignWizardPage1.xib */; };
+		AC72AC3E0FC34E5600DA8E6B /* DesignWizardHintPage.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC6CF2520F7445EB0027E57A /* DesignWizardHintPage.xib */; };
+		AC72AC3F0FC34E5E00DA8E6B /* DesignWizardPage2.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC7AFBD90F5A286E007A9C23 /* DesignWizardPage2.xib */; };
+		AC7378B70F51F91D002E39F3 /* PuzzleView.m in Sources */ = {isa = PBXBuildFile; fileRef = AC7378B60F51F91D002E39F3 /* PuzzleView.m */; };
+		AC73A6210FAA0D9B00B96246 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC73A6200FAA0D9B00B96246 /* AboutViewController.m */; };
+		AC73A6830FAA148D00B96246 /* AboutViewTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AC73A6820FAA148D00B96246 /* AboutViewTableCell.m */; };
+		AC74E2830F95186D00EBE6FA /* PreferencesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC74E2820F95186D00EBE6FA /* PreferencesViewController.m */; };
+		AC75DDB30F9905EE001D97E7 /* WordWizardPuzzleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC7377950F51AE70002E39F3 /* WordWizardPuzzleView.xib */; };
+		AC75DE480F991FE0001D97E7 /* MainMenuView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC7A0CE50F6AEBF700459BE4 /* MainMenuView.xib */; };
+		AC75DE920F992F14001D97E7 /* information.png in Resources */ = {isa = PBXBuildFile; fileRef = AC75DE910F992F14001D97E7 /* information.png */; };
+		AC7AF9850F59C1E8007A9C23 /* PuzzleHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = AC7AF9840F59C1E8007A9C23 /* PuzzleHelper.m */; };
+		AC7AFB610F59FE69007A9C23 /* DesignWiardPage1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC7AFB600F59FE69007A9C23 /* DesignWiardPage1ViewController.m */; };
+		AC7AFBD40F5A2680007A9C23 /* DesignWizardPage2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC7AFBD30F5A2680007A9C23 /* DesignWizardPage2ViewController.m */; };
+		AC7AFCDA0F5A32D9007A9C23 /* DesignPuzzleView.m in Sources */ = {isa = PBXBuildFile; fileRef = AC7AFCD90F5A32D9007A9C23 /* DesignPuzzleView.m */; };
+		AC7CF5F40F793F3E005C1A5D /* DesignWizardViewPuzzleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC7CF5F30F793F3E005C1A5D /* DesignWizardViewPuzzleViewController.m */; };
+		AC873DE50FA77F0A00FDFB3B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC873DE40FA77F0A00FDFB3B /* QuartzCore.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		AC8ACDE60F601DDC007B4137 /* WizardView_1.xcclassmodel in Resources */ = {isa = PBXBuildFile; fileRef = AC8ACDE50F601DDC007B4137 /* WizardView_1.xcclassmodel */; };
+		AC8BE7850F9E45FA009A2851 /* button-option13.png in Resources */ = {isa = PBXBuildFile; fileRef = AC8BE7780F9E45FA009A2851 /* button-option13.png */; };
+		AC8BE7860F9E45FA009A2851 /* button-option12.png in Resources */ = {isa = PBXBuildFile; fileRef = AC8BE7790F9E45FA009A2851 /* button-option12.png */; };
+		AC8BE7870F9E45FA009A2851 /* button-option11.png in Resources */ = {isa = PBXBuildFile; fileRef = AC8BE77A0F9E45FA009A2851 /* button-option11.png */; };
+		AC8BE7880F9E45FA009A2851 /* button-option10.png in Resources */ = {isa = PBXBuildFile; fileRef = AC8BE77B0F9E45FA009A2851 /* button-option10.png */; };
+		AC8BE7890F9E45FA009A2851 /* button-option9.png in Resources */ = {isa = PBXBuildFile; fileRef = AC8BE77C0F9E45FA009A2851 /* button-option9.png */; };
+		AC8BE78A0F9E45FA009A2851 /* button-option8.png in Resources */ = {isa = PBXBuildFile; fileRef = AC8BE77D0F9E45FA009A2851 /* button-option8.png */; };
+		AC8BE78B0F9E45FA009A2851 /* button-option7.png in Resources */ = {isa = PBXBuildFile; fileRef = AC8BE77E0F9E45FA009A2851 /* button-option7.png */; };
+		AC8BE78C0F9E45FA009A2851 /* button-option6.png in Resources */ = {isa = PBXBuildFile; fileRef = AC8BE77F0F9E45FA009A2851 /* button-option6.png */; };
+		AC8BE78D0F9E45FA009A2851 /* button-option5.png in Resources */ = {isa = PBXBuildFile; fileRef = AC8BE7800F9E45FA009A2851 /* button-option5.png */; };
+		AC8BE78E0F9E45FA009A2851 /* button-option4.png in Resources */ = {isa = PBXBuildFile; fileRef = AC8BE7810F9E45FA009A2851 /* button-option4.png */; };
+		AC8BE78F0F9E45FA009A2851 /* button-option3.png in Resources */ = {isa = PBXBuildFile; fileRef = AC8BE7820F9E45FA009A2851 /* button-option3.png */; };
+		AC8BE7900F9E45FA009A2851 /* button-option2.png in Resources */ = {isa = PBXBuildFile; fileRef = AC8BE7830F9E45FA009A2851 /* button-option2.png */; };
+		AC8BE7910F9E45FA009A2851 /* button-option1.png in Resources */ = {isa = PBXBuildFile; fileRef = AC8BE7840F9E45FA009A2851 /* button-option1.png */; };
+		AC8BE82A0F9E551D009A2851 /* PreferenceTilesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC8BE8290F9E551D009A2851 /* PreferenceTilesViewController.m */; };
+		AC8BE8DC0F9E6800009A2851 /* design_tip_1.png in Resources */ = {isa = PBXBuildFile; fileRef = AC8BE8D90F9E6800009A2851 /* design_tip_1.png */; };
+		AC8BE8DD0F9E6800009A2851 /* poste-it-2.png in Resources */ = {isa = PBXBuildFile; fileRef = AC8BE8DA0F9E6800009A2851 /* poste-it-2.png */; };
+		AC8BE8DE0F9E6800009A2851 /* poste-it-3.png in Resources */ = {isa = PBXBuildFile; fileRef = AC8BE8DB0F9E6800009A2851 /* poste-it-3.png */; };
+		AC8BE93A0F9E6E4E009A2851 /* FileUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = AC8BE9390F9E6E4E009A2851 /* FileUtility.m */; };
+		AC937F930F78393B00DC50BD /* test.wav in Resources */ = {isa = PBXBuildFile; fileRef = AC937F920F78393B00DC50BD /* test.wav */; };
+		AC94283C0F8410DC00C38EE9 /* Default2.png in Resources */ = {isa = PBXBuildFile; fileRef = AC94283B0F8410DC00C38EE9 /* Default2.png */; };
+		AC95F5980FAE92D600BD41A3 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = AC95F5960FAE92D600BD41A3 /* Reachability.m */; };
+		AC963F8A0F9C1FD40008A9FE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = AC8104270F97B05600DCA49F /* Localizable.strings */; };
+		AC963F8F0F9C222F0008A9FE /* CommonPuzzleView.m in Sources */ = {isa = PBXBuildFile; fileRef = AC963F8E0F9C222F0008A9FE /* CommonPuzzleView.m */; };
+		AC99897F0FFA50EC00140D41 /* MyStore.mb in Sources */ = {isa = PBXBuildFile; fileRef = AC99897E0FFA50EC00140D41 /* MyStore.mb */; };
+		ACAA22930F80678000634B15 /* DebugLog.m in Sources */ = {isa = PBXBuildFile; fileRef = ACAA22910F80678000634B15 /* DebugLog.m */; };
+		ACB060FF0FE6A8FD001B7EE9 /* RootTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACB060FE0FE6A8FD001B7EE9 /* RootTabBarController.m */; };
+		ACB061B10FE6C256001B7EE9 /* unsolved-small.png in Resources */ = {isa = PBXBuildFile; fileRef = ACB061B00FE6C256001B7EE9 /* unsolved-small.png */; };
+		ACB061B40FE6C2AB001B7EE9 /* check-1-small.png in Resources */ = {isa = PBXBuildFile; fileRef = ACB061B30FE6C2AB001B7EE9 /* check-1-small.png */; };
+		ACBF45F20FEC9F2100019D95 /* description.rtf in Resources */ = {isa = PBXBuildFile; fileRef = ACBF45F10FEC9F2100019D95 /* description.rtf */; };
+		ACBF45FA0FECA10700019D95 /* jobless.pz in Resources */ = {isa = PBXBuildFile; fileRef = ACBF45F30FECA10700019D95 /* jobless.pz */; };
+		ACBF45FB0FECA10700019D95 /* farewell 3.pz in Resources */ = {isa = PBXBuildFile; fileRef = ACBF45F40FECA10700019D95 /* farewell 3.pz */; };
+		ACBF45FC0FECA10700019D95 /* fruit.pz in Resources */ = {isa = PBXBuildFile; fileRef = ACBF45F50FECA10700019D95 /* fruit.pz */; };
+		ACBF45FD0FECA10700019D95 /* peace.pz in Resources */ = {isa = PBXBuildFile; fileRef = ACBF45F60FECA10700019D95 /* peace.pz */; };
+		ACBF45FE0FECA10700019D95 /* propose.pz in Resources */ = {isa = PBXBuildFile; fileRef = ACBF45F70FECA10700019D95 /* propose.pz */; };
+		ACBF45FF0FECA10700019D95 /* fool.pz in Resources */ = {isa = PBXBuildFile; fileRef = ACBF45F80FECA10700019D95 /* fool.pz */; };
+		ACBF462C0FECAA8C00019D95 /* screen1.png in Resources */ = {isa = PBXBuildFile; fileRef = ACBF462B0FECAA8C00019D95 /* screen1.png */; };
+		ACBF46380FECAAB600019D95 /* screen2.png in Resources */ = {isa = PBXBuildFile; fileRef = ACBF46370FECAAB600019D95 /* screen2.png */; };
+		ACBF463C0FECAACD00019D95 /* screen3.png in Resources */ = {isa = PBXBuildFile; fileRef = ACBF463B0FECAACD00019D95 /* screen3.png */; };
+		ACC16BED0FC7549F003928D7 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACC16BEC0FC7549F003928D7 /* SystemConfiguration.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		ACCABFC30F7C15200081CADF /* DingBellSound.aiff in Resources */ = {isa = PBXBuildFile; fileRef = ACCABFC20F7C15200081CADF /* DingBellSound.aiff */; };
+		ACCD70A90F967EB700661F77 /* check-1.png in Resources */ = {isa = PBXBuildFile; fileRef = ACCD70A80F967EB700661F77 /* check-1.png */; };
+		ACD026E00FE2CA43000415DA /* group-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = ACD026DF0FE2CA43000415DA /* group-icon.png */; };
+		ACD026E90FE2DDEC000415DA /* my-puzzles-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = ACD026E80FE2DDEC000415DA /* my-puzzles-icon.png */; };
+		ACD026ED0FE2DF81000415DA /* settings-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = ACD026EC0FE2DF81000415DA /* settings-icon.png */; };
+		ACD026F00FE2E017000415DA /* play-wordoo-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = ACD026EF0FE2E017000415DA /* play-wordoo-icon.png */; };
+		ACD026F70FE2E8B3000415DA /* hint-button-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = ACD026F60FE2E8B3000415DA /* hint-button-icon.png */; };
+		ACD026FC0FE2F117000415DA /* help-solve-puzzle-button.png in Resources */ = {isa = PBXBuildFile; fileRef = ACD026FB0FE2F117000415DA /* help-solve-puzzle-button.png */; };
+		ACDD51FA0F8BF1E700540489 /* blank.m in Sources */ = {isa = PBXBuildFile; fileRef = ACDD51F90F8BF1E700540489 /* blank.m */; };
+		ACF0F3560FACD37B00B7820F /* BrowseCommunityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACF0F3550FACD37B00B7820F /* BrowseCommunityViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1D3623240D0F684500981E51 /* WizardViewAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WizardViewAppDelegate.h; sourceTree = "<group>"; };
+		1D3623250D0F684500981E51 /* WizardViewAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WizardViewAppDelegate.m; sourceTree = "<group>"; };
+		1D6058910D05DD3D006BFB54 /* Wordoo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wordoo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		288765FC0DF74451002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		28AD733E0D9D9553002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		32CA4F630368D1EE00C91783 /* WizardView_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WizardView_Prefix.pch; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC1743790FDEE350003A160D /* GlobalHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalHeader.h; sourceTree = "<group>"; };
+		AC1744700FDEFFED003A160D /* five-star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "five-star.png"; sourceTree = "<group>"; };
+		AC20AF660FBBD46200DB8161 /* NO-SCORE.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "NO-SCORE.png"; sourceTree = "<group>"; };
+		AC3E44F90F75F14C0093C3AA /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = /System/Library/Frameworks/AudioToolbox.framework; sourceTree = "<absolute>"; };
+		AC3F8C690FFA827A001AC838 /* icon-big-wd-free.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "icon-big-wd-free.jpg"; sourceTree = "<group>"; };
+		AC3F8C6A0FFA827A001AC838 /* icon-small-wd-free.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "icon-small-wd-free.jpg"; sourceTree = "<group>"; };
+		AC3F8C6B0FFA827A001AC838 /* icon-big-wd.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "icon-big-wd.jpg"; sourceTree = "<group>"; };
+		AC3F8C710FFA82BD001AC838 /* icon-small-wd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-small-wd.png"; sourceTree = "<group>"; };
+		AC3F8C730FFA82D8001AC838 /* icon-small-wd-free.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-small-wd-free.png"; sourceTree = "<group>"; };
+		AC3F8C750FFA83D7001AC838 /* icon-small-wd.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "icon-small-wd.jpg"; sourceTree = "<group>"; };
+		AC3F8CBC0FFA88D0001AC838 /* Chicago.pz */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Chicago.pz; sourceTree = "<group>"; };
+		AC3F8EA00FFA944E001AC838 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		AC68E2CA0F648F6900BE8533 /* Puzzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Puzzle.h; sourceTree = "<group>"; };
+		AC68E2CB0F648F6900BE8533 /* Puzzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Puzzle.m; sourceTree = "<group>"; };
+		AC69ACA80F89814B0037ABDD /* button-next-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-next-3.png"; sourceTree = "<group>"; };
+		AC69ACA90F89814B0037ABDD /* button-before-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-before-3.png"; sourceTree = "<group>"; };
+		AC6BF06B0F7146EA0025A38B /* GlobalConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalConfiguration.h; sourceTree = "<group>"; };
+		AC6BF06C0F7146EA0025A38B /* GlobalConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlobalConfiguration.m; sourceTree = "<group>"; };
+		AC6BF10B0F71502C0025A38B /* WordWizardPuzzleHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WordWizardPuzzleHelper.h; sourceTree = "<group>"; };
+		AC6BF10C0F71502C0025A38B /* WordWizardPuzzleHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WordWizardPuzzleHelper.m; sourceTree = "<group>"; };
+		AC6BF1C10F715E6A0025A38B /* MainMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainMenuViewController.h; sourceTree = "<group>"; };
+		AC6BF1C20F715E6A0025A38B /* MainMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainMenuViewController.m; sourceTree = "<group>"; };
+		AC6BF21C0F7172890025A38B /* WordWizardPuzzleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WordWizardPuzzleViewController.h; sourceTree = "<group>"; };
+		AC6BF21D0F7172890025A38B /* WordWizardPuzzleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WordWizardPuzzleViewController.m; sourceTree = "<group>"; };
+		AC6C8BB80F69826D008FB33F /* DesignWizardCustomPuzzleListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DesignWizardCustomPuzzleListViewController.h; sourceTree = "<group>"; };
+		AC6C8BB90F69826D008FB33F /* DesignWizardCustomPuzzleListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DesignWizardCustomPuzzleListViewController.m; sourceTree = "<group>"; };
+		AC6CF0F50F7433510027E57A /* DesignWizardHintViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DesignWizardHintViewController.h; sourceTree = "<group>"; };
+		AC6CF0F60F7433510027E57A /* DesignWizardHintViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DesignWizardHintViewController.m; sourceTree = "<group>"; };
+		AC6CF2520F7445EB0027E57A /* DesignWizardHintPage.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DesignWizardHintPage.xib; sourceTree = "<group>"; };
+		AC6D7BDC0F855B7800AFBC87 /* button-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-2.png"; sourceTree = "<group>"; };
+		AC7134D10FA8964F008F2630 /* question.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = question.png; sourceTree = "<group>"; };
+		AC714FE30F937C1A00FDC451 /* ScoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScoreViewController.h; sourceTree = "<group>"; };
+		AC714FE40F937C1A00FDC451 /* ScoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScoreViewController.m; sourceTree = "<group>"; };
+		AC7150130F93CBBE00FDC451 /* ScoreTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScoreTableViewCell.h; sourceTree = "<group>"; };
+		AC7150140F93CBBE00FDC451 /* ScoreTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScoreTableViewCell.m; sourceTree = "<group>"; };
+		AC7377950F51AE70002E39F3 /* WordWizardPuzzleView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WordWizardPuzzleView.xib; sourceTree = "<group>"; };
+		AC7378B50F51F91D002E39F3 /* PuzzleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PuzzleView.h; sourceTree = "<group>"; };
+		AC7378B60F51F91D002E39F3 /* PuzzleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PuzzleView.m; sourceTree = "<group>"; };
+		AC73A61F0FAA0D9B00B96246 /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
+		AC73A6200FAA0D9B00B96246 /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
+		AC73A6810FAA148D00B96246 /* AboutViewTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewTableCell.h; sourceTree = "<group>"; };
+		AC73A6820FAA148D00B96246 /* AboutViewTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewTableCell.m; sourceTree = "<group>"; };
+		AC74E2810F95186D00EBE6FA /* PreferencesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreferencesViewController.h; sourceTree = "<group>"; };
+		AC74E2820F95186D00EBE6FA /* PreferencesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreferencesViewController.m; sourceTree = "<group>"; };
+		AC75DE910F992F14001D97E7 /* information.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = information.png; sourceTree = "<group>"; };
+		AC7A0CE50F6AEBF700459BE4 /* MainMenuView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainMenuView.xib; sourceTree = "<group>"; };
+		AC7AF9830F59C1E8007A9C23 /* PuzzleHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PuzzleHelper.h; sourceTree = "<group>"; };
+		AC7AF9840F59C1E8007A9C23 /* PuzzleHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PuzzleHelper.m; sourceTree = "<group>"; };
+		AC7AFB5C0F59FD9E007A9C23 /* DesignWizardPage1.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DesignWizardPage1.xib; sourceTree = "<group>"; };
+		AC7AFB5F0F59FE69007A9C23 /* DesignWiardPage1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DesignWiardPage1ViewController.h; sourceTree = "<group>"; };
+		AC7AFB600F59FE69007A9C23 /* DesignWiardPage1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DesignWiardPage1ViewController.m; sourceTree = "<group>"; };
+		AC7AFBD20F5A2680007A9C23 /* DesignWizardPage2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DesignWizardPage2ViewController.h; sourceTree = "<group>"; };
+		AC7AFBD30F5A2680007A9C23 /* DesignWizardPage2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DesignWizardPage2ViewController.m; sourceTree = "<group>"; };
+		AC7AFBD90F5A286E007A9C23 /* DesignWizardPage2.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DesignWizardPage2.xib; sourceTree = "<group>"; };
+		AC7AFCD80F5A32D9007A9C23 /* DesignPuzzleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DesignPuzzleView.h; sourceTree = "<group>"; };
+		AC7AFCD90F5A32D9007A9C23 /* DesignPuzzleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DesignPuzzleView.m; sourceTree = "<group>"; };
+		AC7CF5F20F793F3E005C1A5D /* DesignWizardViewPuzzleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DesignWizardViewPuzzleViewController.h; sourceTree = "<group>"; };
+		AC7CF5F30F793F3E005C1A5D /* DesignWizardViewPuzzleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DesignWizardViewPuzzleViewController.m; sourceTree = "<group>"; };
+		AC7CF5FA0F7940DB005C1A5D /* DesignWizardViewPuzzle.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DesignWizardViewPuzzle.xib; sourceTree = "<group>"; };
+		AC8104270F97B05600DCA49F /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		AC873DE40FA77F0A00FDFB3B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = /System/Library/Frameworks/QuartzCore.framework; sourceTree = "<absolute>"; };
+		AC8ACDE50F601DDC007B4137 /* WizardView_1.xcclassmodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcclassmodel; path = WizardView_1.xcclassmodel; sourceTree = "<group>"; };
+		AC8BE7780F9E45FA009A2851 /* button-option13.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-option13.png"; sourceTree = "<group>"; };
+		AC8BE7790F9E45FA009A2851 /* button-option12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-option12.png"; sourceTree = "<group>"; };
+		AC8BE77A0F9E45FA009A2851 /* button-option11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-option11.png"; sourceTree = "<group>"; };
+		AC8BE77B0F9E45FA009A2851 /* button-option10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-option10.png"; sourceTree = "<group>"; };
+		AC8BE77C0F9E45FA009A2851 /* button-option9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-option9.png"; sourceTree = "<group>"; };
+		AC8BE77D0F9E45FA009A2851 /* button-option8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-option8.png"; sourceTree = "<group>"; };
+		AC8BE77E0F9E45FA009A2851 /* button-option7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-option7.png"; sourceTree = "<group>"; };
+		AC8BE77F0F9E45FA009A2851 /* button-option6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-option6.png"; sourceTree = "<group>"; };
+		AC8BE7800F9E45FA009A2851 /* button-option5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-option5.png"; sourceTree = "<group>"; };
+		AC8BE7810F9E45FA009A2851 /* button-option4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-option4.png"; sourceTree = "<group>"; };
+		AC8BE7820F9E45FA009A2851 /* button-option3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-option3.png"; sourceTree = "<group>"; };
+		AC8BE7830F9E45FA009A2851 /* button-option2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-option2.png"; sourceTree = "<group>"; };
+		AC8BE7840F9E45FA009A2851 /* button-option1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-option1.png"; sourceTree = "<group>"; };
+		AC8BE8280F9E551D009A2851 /* PreferenceTilesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreferenceTilesViewController.h; sourceTree = "<group>"; };
+		AC8BE8290F9E551D009A2851 /* PreferenceTilesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreferenceTilesViewController.m; sourceTree = "<group>"; };
+		AC8BE8D90F9E6800009A2851 /* design_tip_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = design_tip_1.png; sourceTree = "<group>"; };
+		AC8BE8DA0F9E6800009A2851 /* poste-it-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "poste-it-2.png"; sourceTree = "<group>"; };
+		AC8BE8DB0F9E6800009A2851 /* poste-it-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "poste-it-3.png"; sourceTree = "<group>"; };
+		AC8BE9380F9E6E4E009A2851 /* FileUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileUtility.h; sourceTree = "<group>"; };
+		AC8BE9390F9E6E4E009A2851 /* FileUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileUtility.m; sourceTree = "<group>"; };
+		AC937F920F78393B00DC50BD /* test.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = test.wav; sourceTree = "<group>"; };
+		AC94283B0F8410DC00C38EE9 /* Default2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default2.png; sourceTree = "<group>"; };
+		AC95F5960FAE92D600BD41A3 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		AC95F5970FAE92D600BD41A3 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		AC963F8D0F9C222F0008A9FE /* CommonPuzzleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonPuzzleView.h; sourceTree = "<group>"; };
+		AC963F8E0F9C222F0008A9FE /* CommonPuzzleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonPuzzleView.m; sourceTree = "<group>"; };
+		AC99897D0FFA50EC00140D41 /* MyStore.hb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MyStore.hb; sourceTree = "<group>"; };
+		AC99897E0FFA50EC00140D41 /* MyStore.mb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MyStore.mb; sourceTree = "<group>"; };
+		ACAA22910F80678000634B15 /* DebugLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DebugLog.m; sourceTree = "<group>"; };
+		ACAA22920F80678000634B15 /* DebugLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DebugLog.h; sourceTree = "<group>"; };
+		ACB060FD0FE6A8FD001B7EE9 /* RootTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootTabBarController.h; sourceTree = "<group>"; };
+		ACB060FE0FE6A8FD001B7EE9 /* RootTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootTabBarController.m; sourceTree = "<group>"; };
+		ACB061B00FE6C256001B7EE9 /* unsolved-small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "unsolved-small.png"; sourceTree = "<group>"; };
+		ACB061B30FE6C2AB001B7EE9 /* check-1-small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "check-1-small.png"; sourceTree = "<group>"; };
+		ACBF45F10FEC9F2100019D95 /* description.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = description.rtf; sourceTree = "<group>"; };
+		ACBF45F30FECA10700019D95 /* jobless.pz */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = jobless.pz; sourceTree = "<group>"; };
+		ACBF45F40FECA10700019D95 /* farewell 3.pz */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "farewell 3.pz"; sourceTree = "<group>"; };
+		ACBF45F50FECA10700019D95 /* fruit.pz */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = fruit.pz; sourceTree = "<group>"; };
+		ACBF45F60FECA10700019D95 /* peace.pz */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = peace.pz; sourceTree = "<group>"; };
+		ACBF45F70FECA10700019D95 /* propose.pz */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = propose.pz; sourceTree = "<group>"; };
+		ACBF45F80FECA10700019D95 /* fool.pz */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = fool.pz; sourceTree = "<group>"; };
+		ACBF462B0FECAA8C00019D95 /* screen1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screen1.png; sourceTree = "<group>"; };
+		ACBF46370FECAAB600019D95 /* screen2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screen2.png; sourceTree = "<group>"; };
+		ACBF463B0FECAACD00019D95 /* screen3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screen3.png; sourceTree = "<group>"; };
+		ACC16BEC0FC7549F003928D7 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		ACCABFC20F7C15200081CADF /* DingBellSound.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = DingBellSound.aiff; sourceTree = "<group>"; };
+		ACCD70A80F967EB700661F77 /* check-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "check-1.png"; sourceTree = "<group>"; };
+		ACD026DF0FE2CA43000415DA /* group-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "group-icon.png"; sourceTree = "<group>"; };
+		ACD026E80FE2DDEC000415DA /* my-puzzles-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "my-puzzles-icon.png"; sourceTree = "<group>"; };
+		ACD026EC0FE2DF81000415DA /* settings-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "settings-icon.png"; sourceTree = "<group>"; };
+		ACD026EF0FE2E017000415DA /* play-wordoo-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "play-wordoo-icon.png"; sourceTree = "<group>"; };
+		ACD026F60FE2E8B3000415DA /* hint-button-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hint-button-icon.png"; sourceTree = "<group>"; };
+		ACD026FB0FE2F117000415DA /* help-solve-puzzle-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "help-solve-puzzle-button.png"; sourceTree = "<group>"; };
+		ACDD51F80F8BF1E700540489 /* blank.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = blank.h; sourceTree = "<group>"; };
+		ACDD51F90F8BF1E700540489 /* blank.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = blank.m; sourceTree = "<group>"; };
+		ACF0F3540FACD37B00B7820F /* BrowseCommunityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrowseCommunityViewController.h; sourceTree = "<group>"; };
+		ACF0F3550FACD37B00B7820F /* BrowseCommunityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrowseCommunityViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
+				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
+				288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */,
+				AC3E44FA0F75F14D0093C3AA /* AudioToolbox.framework in Frameworks */,
+				AC873DE50FA77F0A00FDFB3B /* QuartzCore.framework in Frameworks */,
+				ACC16BED0FC7549F003928D7 /* SystemConfiguration.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				AC95F5960FAE92D600BD41A3 /* Reachability.m */,
+				AC95F5970FAE92D600BD41A3 /* Reachability.h */,
+				ACDD50F20F8BD17C00540489 /* ViewController */,
+				ACDD50F10F8BD13900540489 /* view */,
+				ACDD50EE0F8BCFFA00540489 /* model */,
+				ACAA22910F80678000634B15 /* DebugLog.m */,
+				ACAA22920F80678000634B15 /* DebugLog.h */,
+				1D3623240D0F684500981E51 /* WizardViewAppDelegate.h */,
+				1D3623250D0F684500981E51 /* WizardViewAppDelegate.m */,
+				AC6BF06B0F7146EA0025A38B /* GlobalConfiguration.h */,
+				AC6BF06C0F7146EA0025A38B /* GlobalConfiguration.m */,
+				AC8BE9380F9E6E4E009A2851 /* FileUtility.h */,
+				AC8BE9390F9E6E4E009A2851 /* FileUtility.m */,
+				AC1743790FDEE350003A160D /* GlobalHeader.h */,
+				AC99897D0FFA50EC00140D41 /* MyStore.hb */,
+				AC99897E0FFA50EC00140D41 /* MyStore.mb */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* Wordoo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				AC998A0F0FFA712800140D41 /* images */,
+				ACA756E00FE9890C003382A1 /* standard-puzzles */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+				AC8ACDE50F601DDC007B4137 /* WizardView_1.xcclassmodel */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* WizardView_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AC8104270F97B05600DCA49F /* Localizable.strings */,
+				ACCABFC20F7C15200081CADF /* DingBellSound.aiff */,
+				AC937F920F78393B00DC50BD /* test.wav */,
+				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
+				8D1107310486CEB800E47090 /* Info.plist */,
+				AC7377950F51AE70002E39F3 /* WordWizardPuzzleView.xib */,
+				AC7AFB5C0F59FD9E007A9C23 /* DesignWizardPage1.xib */,
+				AC7AFBD90F5A286E007A9C23 /* DesignWizardPage2.xib */,
+				AC7A0CE50F6AEBF700459BE4 /* MainMenuView.xib */,
+				AC6CF2520F7445EB0027E57A /* DesignWizardHintPage.xib */,
+				AC7CF5FA0F7940DB005C1A5D /* DesignWizardViewPuzzle.xib */,
+				ACBF45F10FEC9F2100019D95 /* description.rtf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ACC16BEC0FC7549F003928D7 /* SystemConfiguration.framework */,
+				AC873DE40FA77F0A00FDFB3B /* QuartzCore.framework */,
+				AC3E44F90F75F14C0093C3AA /* AudioToolbox.framework */,
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+				288765FC0DF74451002DB57D /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AC998A0F0FFA712800140D41 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				AC3F8EA00FFA944E001AC838 /* Default.png */,
+				AC3F8C750FFA83D7001AC838 /* icon-small-wd.jpg */,
+				AC3F8C730FFA82D8001AC838 /* icon-small-wd-free.png */,
+				AC3F8C710FFA82BD001AC838 /* icon-small-wd.png */,
+				AC3F8C690FFA827A001AC838 /* icon-big-wd-free.jpg */,
+				AC3F8C6A0FFA827A001AC838 /* icon-small-wd-free.jpg */,
+				AC3F8C6B0FFA827A001AC838 /* icon-big-wd.jpg */,
+				AC75DE910F992F14001D97E7 /* information.png */,
+				ACCD70A80F967EB700661F77 /* check-1.png */,
+				AC69ACA80F89814B0037ABDD /* button-next-3.png */,
+				AC69ACA90F89814B0037ABDD /* button-before-3.png */,
+				AC6D7BDC0F855B7800AFBC87 /* button-2.png */,
+				AC94283B0F8410DC00C38EE9 /* Default2.png */,
+				ACBF462B0FECAA8C00019D95 /* screen1.png */,
+				ACBF46370FECAAB600019D95 /* screen2.png */,
+				ACBF463B0FECAACD00019D95 /* screen3.png */,
+				ACB061B30FE6C2AB001B7EE9 /* check-1-small.png */,
+				ACB061B00FE6C256001B7EE9 /* unsolved-small.png */,
+				ACD026FB0FE2F117000415DA /* help-solve-puzzle-button.png */,
+				ACD026F60FE2E8B3000415DA /* hint-button-icon.png */,
+				ACD026EF0FE2E017000415DA /* play-wordoo-icon.png */,
+				ACD026EC0FE2DF81000415DA /* settings-icon.png */,
+				ACD026E80FE2DDEC000415DA /* my-puzzles-icon.png */,
+				ACD026DF0FE2CA43000415DA /* group-icon.png */,
+				AC1744700FDEFFED003A160D /* five-star.png */,
+				AC20AF660FBBD46200DB8161 /* NO-SCORE.png */,
+				AC7134D10FA8964F008F2630 /* question.png */,
+				AC8BE8D90F9E6800009A2851 /* design_tip_1.png */,
+				AC8BE8DA0F9E6800009A2851 /* poste-it-2.png */,
+				AC8BE8DB0F9E6800009A2851 /* poste-it-3.png */,
+				AC8BE7780F9E45FA009A2851 /* button-option13.png */,
+				AC8BE7790F9E45FA009A2851 /* button-option12.png */,
+				AC8BE77A0F9E45FA009A2851 /* button-option11.png */,
+				AC8BE77B0F9E45FA009A2851 /* button-option10.png */,
+				AC8BE77C0F9E45FA009A2851 /* button-option9.png */,
+				AC8BE77D0F9E45FA009A2851 /* button-option8.png */,
+				AC8BE77E0F9E45FA009A2851 /* button-option7.png */,
+				AC8BE77F0F9E45FA009A2851 /* button-option6.png */,
+				AC8BE7800F9E45FA009A2851 /* button-option5.png */,
+				AC8BE7810F9E45FA009A2851 /* button-option4.png */,
+				AC8BE7820F9E45FA009A2851 /* button-option3.png */,
+				AC8BE7830F9E45FA009A2851 /* button-option2.png */,
+				AC8BE7840F9E45FA009A2851 /* button-option1.png */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
+		ACA756E00FE9890C003382A1 /* standard-puzzles */ = {
+			isa = PBXGroup;
+			children = (
+				AC3F8CBC0FFA88D0001AC838 /* Chicago.pz */,
+				ACBF45F30FECA10700019D95 /* jobless.pz */,
+				ACBF45F40FECA10700019D95 /* farewell 3.pz */,
+				ACBF45F50FECA10700019D95 /* fruit.pz */,
+				ACBF45F60FECA10700019D95 /* peace.pz */,
+				ACBF45F70FECA10700019D95 /* propose.pz */,
+				ACBF45F80FECA10700019D95 /* fool.pz */,
+			);
+			name = "standard-puzzles";
+			sourceTree = "<group>";
+		};
+		ACDD50EE0F8BCFFA00540489 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				ACDD51940F8BDB4F00540489 /* WordPuzzle */,
+				AC68E2CA0F648F6900BE8533 /* Puzzle.h */,
+				AC7AF9830F59C1E8007A9C23 /* PuzzleHelper.h */,
+				AC7AF9840F59C1E8007A9C23 /* PuzzleHelper.m */,
+				AC68E2CB0F648F6900BE8533 /* Puzzle.m */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		ACDD50F10F8BD13900540489 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				AC7378B50F51F91D002E39F3 /* PuzzleView.h */,
+				AC7AFCD80F5A32D9007A9C23 /* DesignPuzzleView.h */,
+				AC7AFCD90F5A32D9007A9C23 /* DesignPuzzleView.m */,
+				AC7378B60F51F91D002E39F3 /* PuzzleView.m */,
+				AC963F8D0F9C222F0008A9FE /* CommonPuzzleView.h */,
+				AC963F8E0F9C222F0008A9FE /* CommonPuzzleView.m */,
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+		ACDD50F20F8BD17C00540489 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				ACDD51030F8BD42400540489 /* PuzzleDesign */,
+				ACDD51020F8BD41800540489 /* PuzzlePlay */,
+				AC6BF1C10F715E6A0025A38B /* MainMenuViewController.h */,
+				AC6BF1C20F715E6A0025A38B /* MainMenuViewController.m */,
+				ACDD51F80F8BF1E700540489 /* blank.h */,
+				ACDD51F90F8BF1E700540489 /* blank.m */,
+				AC714FE30F937C1A00FDC451 /* ScoreViewController.h */,
+				AC714FE40F937C1A00FDC451 /* ScoreViewController.m */,
+				AC7150130F93CBBE00FDC451 /* ScoreTableViewCell.h */,
+				AC7150140F93CBBE00FDC451 /* ScoreTableViewCell.m */,
+				AC74E2810F95186D00EBE6FA /* PreferencesViewController.h */,
+				AC74E2820F95186D00EBE6FA /* PreferencesViewController.m */,
+				AC8BE8280F9E551D009A2851 /* PreferenceTilesViewController.h */,
+				AC8BE8290F9E551D009A2851 /* PreferenceTilesViewController.m */,
+				AC73A61F0FAA0D9B00B96246 /* AboutViewController.h */,
+				AC73A6200FAA0D9B00B96246 /* AboutViewController.m */,
+				AC73A6810FAA148D00B96246 /* AboutViewTableCell.h */,
+				AC73A6820FAA148D00B96246 /* AboutViewTableCell.m */,
+				ACF0F3540FACD37B00B7820F /* BrowseCommunityViewController.h */,
+				ACF0F3550FACD37B00B7820F /* BrowseCommunityViewController.m */,
+				ACB060FD0FE6A8FD001B7EE9 /* RootTabBarController.h */,
+				ACB060FE0FE6A8FD001B7EE9 /* RootTabBarController.m */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		ACDD51020F8BD41800540489 /* PuzzlePlay */ = {
+			isa = PBXGroup;
+			children = (
+				AC6BF21C0F7172890025A38B /* WordWizardPuzzleViewController.h */,
+				AC6BF21D0F7172890025A38B /* WordWizardPuzzleViewController.m */,
+			);
+			name = PuzzlePlay;
+			sourceTree = "<group>";
+		};
+		ACDD51030F8BD42400540489 /* PuzzleDesign */ = {
+			isa = PBXGroup;
+			children = (
+				AC7AFB5F0F59FE69007A9C23 /* DesignWiardPage1ViewController.h */,
+				AC7AFB600F59FE69007A9C23 /* DesignWiardPage1ViewController.m */,
+				AC7AFBD20F5A2680007A9C23 /* DesignWizardPage2ViewController.h */,
+				AC7AFBD30F5A2680007A9C23 /* DesignWizardPage2ViewController.m */,
+				AC6C8BB80F69826D008FB33F /* DesignWizardCustomPuzzleListViewController.h */,
+				AC6C8BB90F69826D008FB33F /* DesignWizardCustomPuzzleListViewController.m */,
+				AC6CF0F50F7433510027E57A /* DesignWizardHintViewController.h */,
+				AC6CF0F60F7433510027E57A /* DesignWizardHintViewController.m */,
+				AC7CF5F20F793F3E005C1A5D /* DesignWizardViewPuzzleViewController.h */,
+				AC7CF5F30F793F3E005C1A5D /* DesignWizardViewPuzzleViewController.m */,
+			);
+			name = PuzzleDesign;
+			sourceTree = "<group>";
+		};
+		ACDD51940F8BDB4F00540489 /* WordPuzzle */ = {
+			isa = PBXGroup;
+			children = (
+				AC6BF10B0F71502C0025A38B /* WordWizardPuzzleHelper.h */,
+				AC6BF10C0F71502C0025A38B /* WordWizardPuzzleHelper.m */,
+			);
+			name = WordPuzzle;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* WizardView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "WizardView" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WizardView;
+			productName = WizardView;
+			productReference = 1D6058910D05DD3D006BFB54 /* Wordoo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "WizardView" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* WizardView */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
+				AC75DDB30F9905EE001D97E7 /* WordWizardPuzzleView.xib in Resources */,
+				AC72AC3D0FC34E3F00DA8E6B /* DesignWizardPage1.xib in Resources */,
+				AC72AC3F0FC34E5E00DA8E6B /* DesignWizardPage2.xib in Resources */,
+				AC8ACDE60F601DDC007B4137 /* WizardView_1.xcclassmodel in Resources */,
+				AC75DE480F991FE0001D97E7 /* MainMenuView.xib in Resources */,
+				AC72AC3E0FC34E5600DA8E6B /* DesignWizardHintPage.xib in Resources */,
+				AC937F930F78393B00DC50BD /* test.wav in Resources */,
+				AC7134DA0FA896A9008F2630 /* DesignWizardViewPuzzle.xib in Resources */,
+				ACCABFC30F7C15200081CADF /* DingBellSound.aiff in Resources */,
+				AC94283C0F8410DC00C38EE9 /* Default2.png in Resources */,
+				AC6D7BDD0F855B7800AFBC87 /* button-2.png in Resources */,
+				AC69ACAA0F89814B0037ABDD /* button-next-3.png in Resources */,
+				AC69ACAB0F89814B0037ABDD /* button-before-3.png in Resources */,
+				ACCD70A90F967EB700661F77 /* check-1.png in Resources */,
+				AC963F8A0F9C1FD40008A9FE /* Localizable.strings in Resources */,
+				AC75DE920F992F14001D97E7 /* information.png in Resources */,
+				AC8BE7850F9E45FA009A2851 /* button-option13.png in Resources */,
+				AC8BE7860F9E45FA009A2851 /* button-option12.png in Resources */,
+				AC8BE7870F9E45FA009A2851 /* button-option11.png in Resources */,
+				AC8BE7880F9E45FA009A2851 /* button-option10.png in Resources */,
+				AC8BE7890F9E45FA009A2851 /* button-option9.png in Resources */,
+				AC8BE78A0F9E45FA009A2851 /* button-option8.png in Resources */,
+				AC8BE78B0F9E45FA009A2851 /* button-option7.png in Resources */,
+				AC8BE78C0F9E45FA009A2851 /* button-option6.png in Resources */,
+				AC8BE78D0F9E45FA009A2851 /* button-option5.png in Resources */,
+				AC8BE78E0F9E45FA009A2851 /* button-option4.png in Resources */,
+				AC8BE78F0F9E45FA009A2851 /* button-option3.png in Resources */,
+				AC8BE7900F9E45FA009A2851 /* button-option2.png in Resources */,
+				AC8BE7910F9E45FA009A2851 /* button-option1.png in Resources */,
+				AC8BE8DC0F9E6800009A2851 /* design_tip_1.png in Resources */,
+				AC8BE8DD0F9E6800009A2851 /* poste-it-2.png in Resources */,
+				AC8BE8DE0F9E6800009A2851 /* poste-it-3.png in Resources */,
+				AC7134D20FA8964F008F2630 /* question.png in Resources */,
+				AC20AF670FBBD46200DB8161 /* NO-SCORE.png in Resources */,
+				AC1744710FDEFFED003A160D /* five-star.png in Resources */,
+				ACD026E00FE2CA43000415DA /* group-icon.png in Resources */,
+				ACD026E90FE2DDEC000415DA /* my-puzzles-icon.png in Resources */,
+				ACD026ED0FE2DF81000415DA /* settings-icon.png in Resources */,
+				ACD026F00FE2E017000415DA /* play-wordoo-icon.png in Resources */,
+				ACD026F70FE2E8B3000415DA /* hint-button-icon.png in Resources */,
+				ACD026FC0FE2F117000415DA /* help-solve-puzzle-button.png in Resources */,
+				ACB061B10FE6C256001B7EE9 /* unsolved-small.png in Resources */,
+				ACB061B40FE6C2AB001B7EE9 /* check-1-small.png in Resources */,
+				ACBF45F20FEC9F2100019D95 /* description.rtf in Resources */,
+				ACBF45FA0FECA10700019D95 /* jobless.pz in Resources */,
+				ACBF45FB0FECA10700019D95 /* farewell 3.pz in Resources */,
+				ACBF45FC0FECA10700019D95 /* fruit.pz in Resources */,
+				ACBF45FD0FECA10700019D95 /* peace.pz in Resources */,
+				ACBF45FE0FECA10700019D95 /* propose.pz in Resources */,
+				ACBF45FF0FECA10700019D95 /* fool.pz in Resources */,
+				ACBF462C0FECAA8C00019D95 /* screen1.png in Resources */,
+				ACBF46380FECAAB600019D95 /* screen2.png in Resources */,
+				ACBF463C0FECAACD00019D95 /* screen3.png in Resources */,
+				AC3F8C6D0FFA827A001AC838 /* icon-big-wd-free.jpg in Resources */,
+				AC3F8C6E0FFA827A001AC838 /* icon-small-wd-free.jpg in Resources */,
+				AC3F8C6F0FFA827A001AC838 /* icon-big-wd.jpg in Resources */,
+				AC3F8C720FFA82BD001AC838 /* icon-small-wd.png in Resources */,
+				AC3F8C740FFA82D8001AC838 /* icon-small-wd-free.png in Resources */,
+				AC3F8C760FFA83D7001AC838 /* icon-small-wd.jpg in Resources */,
+				AC3F8CBD0FFA88D0001AC838 /* Chicago.pz in Resources */,
+				AC3F8EA10FFA944E001AC838 /* Default.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				1D3623260D0F684500981E51 /* WizardViewAppDelegate.m in Sources */,
+				AC7378B70F51F91D002E39F3 /* PuzzleView.m in Sources */,
+				AC7AF9850F59C1E8007A9C23 /* PuzzleHelper.m in Sources */,
+				AC7AFB610F59FE69007A9C23 /* DesignWiardPage1ViewController.m in Sources */,
+				AC7AFBD40F5A2680007A9C23 /* DesignWizardPage2ViewController.m in Sources */,
+				AC7AFCDA0F5A32D9007A9C23 /* DesignPuzzleView.m in Sources */,
+				AC68E2CC0F648F6900BE8533 /* Puzzle.m in Sources */,
+				AC6C8BBA0F69826D008FB33F /* DesignWizardCustomPuzzleListViewController.m in Sources */,
+				AC6BF06D0F7146EA0025A38B /* GlobalConfiguration.m in Sources */,
+				AC6BF10D0F71502C0025A38B /* WordWizardPuzzleHelper.m in Sources */,
+				AC6BF1C30F715E6A0025A38B /* MainMenuViewController.m in Sources */,
+				AC6BF21E0F7172890025A38B /* WordWizardPuzzleViewController.m in Sources */,
+				AC6CF0F70F7433510027E57A /* DesignWizardHintViewController.m in Sources */,
+				AC7CF5F40F793F3E005C1A5D /* DesignWizardViewPuzzleViewController.m in Sources */,
+				ACAA22930F80678000634B15 /* DebugLog.m in Sources */,
+				ACDD51FA0F8BF1E700540489 /* blank.m in Sources */,
+				AC714FE50F937C1A00FDC451 /* ScoreViewController.m in Sources */,
+				AC7150150F93CBBE00FDC451 /* ScoreTableViewCell.m in Sources */,
+				AC74E2830F95186D00EBE6FA /* PreferencesViewController.m in Sources */,
+				AC963F8F0F9C222F0008A9FE /* CommonPuzzleView.m in Sources */,
+				AC8BE82A0F9E551D009A2851 /* PreferenceTilesViewController.m in Sources */,
+				AC8BE93A0F9E6E4E009A2851 /* FileUtility.m in Sources */,
+				AC73A6210FAA0D9B00B96246 /* AboutViewController.m in Sources */,
+				AC73A6830FAA148D00B96246 /* AboutViewTableCell.m in Sources */,
+				ACF0F3560FACD37B00B7820F /* BrowseCommunityViewController.m in Sources */,
+				AC95F5980FAE92D600BD41A3 /* Reachability.m in Sources */,
+				ACB060FF0FE6A8FD001B7EE9 /* RootTabBarController.m in Sources */,
+				AC99897F0FFA50EC00140D41 /* MyStore.mb in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = WizardView_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				OTHER_CFLAGS = "-DDEBUG";
+				PRODUCT_NAME = Wordoo;
+				_DEBUG = YES;
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = WizardView_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				PRODUCT_NAME = Wordoo;
+				SDKROOT = iphoneos2.1;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Junqiang You";
+				DEBUG = YES;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "-DDEBUG";
+				PREBINDING = NO;
+				PRODUCT_NAME = Wordoo;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "D33D2809-D578-4891-8457-F42D2303BA89";
+				SDKROOT = iphoneos3.0;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Junqiang You";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				PRODUCT_NAME = Wordoo;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "D33D2809-D578-4891-8457-F42D2303BA89";
+				SDKROOT = iphoneos3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "WizardView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "WizardView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
